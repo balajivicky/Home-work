@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class SpotifyMusic 
+class SpotifyMusic 
 {
     public static void main(String[] args) 
 	{
