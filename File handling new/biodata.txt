@@ -1,0 +1,27 @@
+=========== BIO DATA ===========
+👤 Personal Details
+Name : Balaji M
+Age : 32
+Gender : Male
+DOB : 23/07/1993
+Blood Group : B+Ve
+
+🎓 Education
+Qualification : Btech ,MBA
+College : Hindustan University
+CGPA : 7.9
+
+💼 Skills
+Core Java, OOPS, SQL,HTML,CSS,JAVASCRIPT
+
+Experience : 2  Years
+
+📞 Contact
+Phone : 6380798818
+Email : mbalajivicky@gmail.com
+Address : 75,Hakim Garden,Kovalam,Chennai 
+
+👨‍👩‍👧 Family
+Father Name : Manoharan M
+Mother Name : Umarani M
+================================
