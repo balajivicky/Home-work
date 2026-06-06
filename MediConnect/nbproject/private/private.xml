@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/mbala/OneDrive/Dokumen/NetBeansProjects/MediConnect/</file>
+            <file>file:/C:/Users/mbala/OneDrive/Dokumen/NetBeansProjects/MediConnect/src/com/mediconnect/app/Main.java</file>
+            <file>file:/C:/Users/mbala/OneDrive/Dokumen/NetBeansProjects/MediConnect/src/com/mediconnect/util/DBConnection.java</file>
+            <file>file:/C:/Users/mbala/OneDrive/Dokumen/NetBeansProjects/MediConnect/src/com/mediconnect/app/TestConnection.java</file>
+            <file>file:/C:/Users/mbala/OneDrive/Dokumen/NetBeansProjects/MediConnect/src/com/mediconnect/model/User.java</file>
+            <file>file:/C:/Users/mbala/OneDrive/Dokumen/NetBeansProjects/MediConnect/src/com/mediconnect/dao/UserDAO.java</file>
+            <file>file:/C:/Users/mbala/OneDrive/Dokumen/NetBeansProjects/MediConnect/src/com/mediconnect/controller/LoginController.java</file>
+            <file>file:/C:/Users/mbala/OneDrive/Dokumen/NetBeansProjects/MediConnect/src/com/mediconnect/view/login.fxml</file>
+            <file>file:/C:/Users/mbala/OneDrive/Dokumen/NetBeansProjects/MediConnect/src/com/mediconnect/view/dashboard.fxml</file>
+            <file>file:/C:/Users/mbala/OneDrive/Dokumen/NetBeansProjects/MediConnect/src/com/mediconnect/view/billing.fxml</file>
+            <file>file:/C:/Users/mbala/OneDrive/Dokumen/NetBeansProjects/MediConnect/src/com/mediconnect/view/medicines.fxml</file>
+            <file>file:/C:/Users/mbala/OneDrive/Dokumen/NetBeansProjects/MediConnect/src/com/mediconnect/view/inventory.fxml</file>
+            <file>file:/C:/Users/mbala/OneDrive/Dokumen/NetBeansProjects/MediConnect/src/com/mediconnect/view/expiry.fxml</file>
+            <file>file:/C:/Users/mbala/OneDrive/Dokumen/NetBeansProjects/MediConnect/src/com/mediconnect/view/reports.fxml</file>
+            <file>file:/C:/Users/mbala/OneDrive/Dokumen/NetBeansProjects/MediConnect/src/com/mediconnect/view/patients.fxml</file>
+            <file>file:/C:/Users/mbala/OneDrive/Dokumen/NetBeansProjects/MediConnect/src/com/mediconnect/view/settings.fxml</file>
+            <file>file:/C:/Users/mbala/OneDrive/Dokumen/NetBeansProjects/MediConnect/src/com/mediconnect/controller/DashboardController.java</file>
+            <file>file:/C:/Users/mbala/OneDrive/Dokumen/NetBeansProjects/MediConnect/src/com/mediconnect/controller/ExpiryController.java</file>
+            <file>file:/C:/Users/mbala/OneDrive/Dokumen/NetBeansProjects/MediConnect/src/com/mediconnect/css/dashboard.css</file>
+            <file>file:/C:/Users/mbala/OneDrive/Dokumen/NetBeansProjects/MediConnect/src/com/mediconnect/model/Medicine.java</file>
+            <file>file:/C:/Users/mbala/OneDrive/Dokumen/NetBeansProjects/MediConnect/src/com/mediconnect/dao/MedicineDAO.java</file>
+            <file>file:/C:/Users/mbala/OneDrive/Dokumen/NetBeansProjects/MediConnect/src/com/mediconnect/controller/MedicinesController.java</file>
+            <file>file:/C:/Users/mbala/OneDrive/Dokumen/NetBeansProjects/MediConnect/src/com/mediconnect/controller/BillingController.java</file>
+            <file>file:/C:/Users/mbala/OneDrive/Dokumen/NetBeansProjects/MediConnect/src/com/mediconnect/model/Bill.java</file>
+            <file>file:/C:/Users/mbala/OneDrive/Dokumen/NetBeansProjects/MediConnect/src/com/mediconnect/model/BillItem.java</file>
+            <file>file:/C:/Users/mbala/OneDrive/Dokumen/NetBeansProjects/MediConnect/src/com/mediconnect/dao/BillDAO.java</file>
+            <file>file:/C:/Users/mbala/OneDrive/Dokumen/NetBeansProjects/MediConnect/src/com/mediconnect/dao/BillItemDAO.java</file>
+            <file>file:/C:/Users/mbala/OneDrive/Dokumen/NetBeansProjects/MediConnect/src/com/mediconnect/controller/InventoryController.java</file>
+        </group>
+    </open-files>
+</project-private>

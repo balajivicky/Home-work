@@ -1,0 +1,43 @@
+.menu-item{
+
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 10 15 10 15;
+    -fx-background-radius: 10;
+    -fx-cursor: hand;
+}
+
+.menu-item:hover{
+
+    -fx-background-color: rgba(255,255,255,0.25);
+
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+.dashboard-card{
+
+    -fx-background-color: white;
+
+    -fx-background-radius: 20;
+
+    -fx-effect: dropshadow(
+        gaussian,
+        #d1d5db,
+        10,
+        0,
+        0,
+        4
+    );
+}
+
+.dashboard-card:hover{
+
+    -fx-background-color: #EFF6FF;
+
+    -fx-scale-x: 1.03;
+    -fx-scale-y: 1.03;
+}

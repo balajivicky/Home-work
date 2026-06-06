@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="700.0"
+            prefWidth="1200.0"
+            fx:controller="com.mediconnect.controller.MedicinesController"
+            stylesheets="@../css/dashboard.css"
+            style="-fx-background-color: linear-gradient(to bottom right,#DBEAFE,#BFDBFE,#93C5FD);"
+            xmlns="http://javafx.com/javafx/26"
+            xmlns:fx="http://javafx.com/fxml/1">
+
+    <!-- Sidebar -->
+
+    <AnchorPane prefHeight="700.0"
+                prefWidth="240.0"
+                style="-fx-background-color: linear-gradient(to bottom,#2563EB,#06B6D4);">
+
+        <Label layoutX="30.0"
+               layoutY="30.0"
+               style="-fx-text-fill: white;
+                      -fx-font-size: 26px;
+                      -fx-font-weight: bold;"
+               text="MEDICONNECT" />
+
+        <VBox layoutX="30.0"
+              layoutY="110.0"
+              spacing="30.0">
+
+            <Label styleClass="menu-item" text="🏠 Dashboard"/>
+            <Label styleClass="menu-item" text="💳 Billing"/>
+            <Label styleClass="menu-item" text="💊 Medicines"/>
+            <Label styleClass="menu-item" text="📦 Inventory"/>
+            <Label styleClass="menu-item" text="⏰ Expiry"/>
+            <Label styleClass="menu-item" text="📊 Reports"/>
+            <Label styleClass="menu-item" text="🧑 Patients"/>
+            <Label styleClass="menu-item" text="⚙ Settings"/>
+            <Label styleClass="menu-item" text="🚪 Logout"/>
+
+        </VBox>
+
+    </AnchorPane>
+
+    <!-- Title -->
+
+    <Label layoutX="280.0"
+           layoutY="20.0"
+           style="-fx-font-size: 30px;
+                  -fx-font-weight: bold;"
+           text="Medicines Management"/>
+
+    <!-- Medicine Name -->
+
+    <Label layoutX="300.0"
+           layoutY="86.0"
+           style="-fx-font-size: 18px;
+                  -fx-font-weight: bold;"
+           text="Medicine Name"/>
+
+    <TextField fx:id="txtMedicineName"
+           layoutX="500.0"
+           layoutY="81.0"
+           prefHeight="40.0"
+           prefWidth="250.0"/>
+    <!-- Category -->
+
+    <Label layoutX="800.0"
+           layoutY="86.0"
+           style="-fx-font-size: 18px;
+                  -fx-font-weight: bold;"
+           text="Category"/>
+
+    <TextField fx:id="txtCategory"
+           layoutX="930.0"
+           layoutY="81.0"
+           prefHeight="40.0"
+           prefWidth="200.0"/>
+
+    <!-- Company -->
+
+    <Label layoutX="300.0"
+           layoutY="148.0"
+           style="-fx-font-size: 18px;
+                  -fx-font-weight: bold;"
+           text="Company"/>
+
+    <TextField fx:id="txtCompany"
+           layoutX="500.0"
+           layoutY="143.0"
+           prefHeight="40.0"
+           prefWidth="250.0"/>
+
+    <!-- Batch -->
+
+    <Label layoutX="800.0"
+           layoutY="148.0"
+           style="-fx-font-size: 18px;
+                  -fx-font-weight: bold;"
+           text="Batch No"/>
+
+    <TextField fx:id="txtBatchNo"
+           layoutX="930.0"
+           layoutY="143.0"
+           prefHeight="40.0"
+           prefWidth="200.0"/>
+
+    <!-- MFG Date -->
+
+    <Label layoutX="300.0"
+           layoutY="205.0"
+           style="-fx-font-size: 18px;
+                  -fx-font-weight: bold;"
+           text="MFG Date"/>
+
+    <DatePicker fx:id="dpMfgDate"
+            layoutX="500.0"
+            layoutY="200.0"
+            prefHeight="40.0"
+            prefWidth="250.0"/>
+
+    <!-- Expiry Date -->
+
+    <Label layoutX="800.0"
+           layoutY="205.0"
+           style="-fx-font-size: 18px;
+                  -fx-font-weight: bold;"
+           text="Expiry Date"/>
+
+    <DatePicker fx:id="dpExpiryDate"
+            layoutX="930.0"
+            layoutY="200.0"
+            prefHeight="40.0"
+            prefWidth="200.0"/>
+
+    <!-- Price -->
+
+    <Label layoutX="300.0"
+           layoutY="265.0"
+           style="-fx-font-size: 18px;
+                  -fx-font-weight: bold;"
+           text="Price"/>
+
+   <TextField fx:id="txtPrice"
+           layoutX="500.0"
+           layoutY="260.0"
+           prefHeight="40.0"
+           prefWidth="250.0"/>
+
+    <!-- Quantity -->
+
+    <Label layoutX="800.0"
+           layoutY="265.0"
+           style="-fx-font-size: 18px;
+                  -fx-font-weight: bold;"
+           text="Quantity"/>
+
+    <TextField fx:id="txtQuantity"
+           layoutX="930.0"
+           layoutY="260.0"
+           prefHeight="40.0"
+           prefWidth="200.0"/>
+
+    <!-- GST -->
+
+    <Label layoutX="300.0"
+           layoutY="320.0"
+           style="-fx-font-size: 18px;
+                  -fx-font-weight: bold;"
+           text="GST %"/>
+
+    <TextField fx:id="txtGST"
+           layoutX="500.0"
+           layoutY="315.0"
+           prefHeight="40.0"
+           prefWidth="250.0"/>
+
+    <!-- Save Button -->
+
+   <Button fx:id="btnSaveMedicine"
+        layoutX="550.0"
+        layoutY="368.0"
+        prefHeight="45.0"
+        prefWidth="180.0"
+        styleClass="action-button"
+        text="SAVE MEDICINE"
+        onAction="#saveMedicine"/>
+
+    <!-- Table -->
+
+    <TableView fx:id="medicineTable"
+           layoutX="254.0"
+           layoutY="434.0"
+           prefHeight="237.0"
+           prefWidth="926.0"
+           styleClass="dashboard-card">
+
+    <columns>
+
+        <TableColumn fx:id="colSerialNo"
+                     prefWidth="70.0"
+                     text="S.No"/>
+
+        <TableColumn fx:id="colMedicineName"
+                     prefWidth="150.0"
+                     text="Medicine Name"/>
+
+        <TableColumn fx:id="colCompany"
+                     prefWidth="120.0"
+                     text="Company"/>
+
+        <TableColumn fx:id="colCategory"
+                     prefWidth="120.0"
+                     text="Category"/>
+
+        <TableColumn fx:id="colBatchNo"
+                     prefWidth="100.0"
+                     text="Batch No"/>
+
+        <TableColumn fx:id="colExpiryDate"
+                     prefWidth="120.0"
+                     text="Expiry Date"/>
+
+        <TableColumn fx:id="colPrice"
+                     prefWidth="80.0"
+                     text="Price"/>
+
+        <TableColumn fx:id="colQuantity"
+                     prefWidth="90.0"
+                     text="Quantity"/>
+
+        <TableColumn fx:id="colGST"
+                     prefWidth="70.0"
+                     text="GST %"/>
+
+    </columns>
+
+</TableView>
+
+</AnchorPane>
+

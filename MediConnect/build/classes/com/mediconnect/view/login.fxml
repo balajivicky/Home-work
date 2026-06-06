@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1200.0"
+            xmlns="http://javafx.com/javafx/26"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.mediconnect.controller.LoginController">
+
+    <Rectangle fill="#2563EB" height="700.0" width="1200.0" />
+
+    <Text fill="WHITE"
+          layoutX="180.0"
+          layoutY="320.0"
+          text="MediConnect">
+        <font>
+            <Font name="System Bold Italic" size="42.0" />
+        </font>
+    </Text>
+
+    <Text fill="WHITE"
+          layoutX="90.0"
+          layoutY="380.0"
+          text="Pharmacy Management Software">
+        <font>
+            <Font name="System Bold Italic" size="28.0" />
+        </font>
+    </Text>
+
+    <AnchorPane layoutX="720.0"
+                layoutY="120.0"
+                prefHeight="450.0"
+                prefWidth="360.0"
+                style="-fx-background-color: rgba(255,255,255,0.15);
+                       -fx-background-radius: 25;
+                       -fx-border-color: white;
+                       -fx-border-radius: 25;">
+
+        <Text fill="WHITE"
+              layoutX="145.0"
+              layoutY="50.0"
+              text="Login">
+            <font>
+                <Font name="System Bold Italic" size="28.0" />
+            </font>
+        </Text>
+
+        <VBox layoutX="30.0"
+              layoutY="80.0"
+              prefWidth="300.0"
+              spacing="15.0">
+
+            <Label text="Username"
+                   style="-fx-text-fill:white;
+                          -fx-font-size:16;
+                          -fx-font-weight:bold;" />
+
+            <TextField fx:id="txtUsername"
+                       alignment="CENTER"
+                       prefHeight="42.0"
+                       promptText="Enter Username" />
+
+            <Label text="Password"
+                   style="-fx-text-fill:white;
+                          -fx-font-size:16;
+                          -fx-font-weight:bold;" />
+
+            <PasswordField fx:id="txtPassword"
+                           alignment="CENTER"
+                           prefHeight="42.0"
+                           promptText="Enter Password" />
+
+            <Hyperlink text="Forgot Password"
+                       textFill="WHITE" />
+        </VBox>
+
+        <Button layoutX="120.0"
+                layoutY="320.0"
+                prefHeight="42.0"
+                prefWidth="120.0"
+                text="LOGIN"
+                onAction="#handleLogin" />
+
+        <Button layoutX="100.0"
+                layoutY="380.0"
+                prefHeight="42.0"
+                prefWidth="160.0"
+                text="REGISTER USER"
+                onAction="#openRegisterScreen" />
+
+    </AnchorPane>
+
+</AnchorPane>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: linear-gradient(to bottom right,#DBEAFE,#BFDBFE,#93C5FD);" stylesheets="@../css/dashboard.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/26" fx:controller="com.mediconnect.controller.BillingController">
+
+    <Label text="Billing Screen Opened" />
+    <!-- Sidebar -->
+
+    <AnchorPane prefHeight="700.0" prefWidth="240.0" style="-fx-background-color: linear-gradient(to bottom,#2563EB,#06B6D4);">
+
+        <Label layoutX="30.0" layoutY="30.0" style="-fx-text-fill: white;                       -fx-font-size: 26px;                       -fx-font-weight: bold;" text="MEDICONNECT" />
+
+        <VBox layoutX="30.0" layoutY="110.0" spacing="30.0">
+
+            <Label styleClass="menu-item" text="🏠 Dashboard" />
+            <Label styleClass="menu-item" text="💳 Billing" />
+            <Label styleClass="menu-item" text="💊 Medicines" />
+            <Label styleClass="menu-item" text="📦 Inventory" />
+            <Label styleClass="menu-item" text="⏰ Expiry" />
+            <Label styleClass="menu-item" text="📊 Reports" />
+            <Label styleClass="menu-item" text="🧑 Patients" />
+            <Label styleClass="menu-item" text="⚙ Settings" />
+            <Label styleClass="menu-item" text="🚪 Logout" />
+
+        </VBox>
+
+    </AnchorPane>
+
+    <!-- Header -->
+
+    <AnchorPane layoutX="240.0" prefHeight="90.0" prefWidth="960.0" style="-fx-background-color: white;">
+
+        <Label layoutX="35.0" layoutY="25.0" style="-fx-font-size: 32px; -fx-font-weight: bold;" text="New Bill" />
+
+        <Label layoutX="35.0" layoutY="60.0" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Bill No : BIL-000123" />
+
+        <Label layoutX="700.0" layoutY="35.0" style="-fx-font-size: 22px; -fx-font-weight: bold;" text="Date : 04-Jun-2026" />
+
+    </AnchorPane>
+
+    <!-- Customer Details -->
+
+    <AnchorPane layoutX="275.0" layoutY="100.0" prefHeight="120.0" prefWidth="900.0" styleClass="dashboard-card">
+
+        <Label layoutX="25.0" layoutY="20.0" style="-fx-font-size: 24px;                       -fx-font-weight: bold;                       -fx-text-fill: #2563EB;" text="Customer Details" />
+
+        <Label layoutX="25.0" layoutY="65.0" style="-fx-font-size: 18px;                       -fx-font-weight: bold;" text="Name" />
+
+        <TextField fx:id="txtCustomerName" layoutX="100.0" layoutY="60.0" prefHeight="35.0" prefWidth="220.0" />
+
+        <Label layoutX="380.0" layoutY="65.0" style="-fx-font-size: 18px;                       -fx-font-weight: bold;" text="Phone No" />
+
+        <TextField fx:id="txtPhoneNo" layoutX="490.0" layoutY="60.0" prefHeight="35.0" prefWidth="220.0" />
+
+    </AnchorPane>
+
+    <!-- Add Medicine -->
+
+    <AnchorPane layoutX="275.0" layoutY="230.0" prefHeight="70.0" prefWidth="900.0" styleClass="dashboard-card">
+
+        <Label layoutX="25.0" layoutY="22.0" style="-fx-font-size: 22px;                       -fx-font-weight: bold;" text="Add Medicines" />
+
+        <TextField fx:id="txtMedicineSearch" layoutX="250.0" layoutY="18.0" prefHeight="35.0" prefWidth="420.0" promptText="Enter Medicine Name" />
+
+<Label layoutX="690.0" layoutY="25.0" style="-fx-font-size:16px;               -fx-font-weight:bold;" text="Qty" />
+
+<TextField fx:id="txtQuantity" layoutX="730.0" layoutY="18.0" prefHeight="35.0" prefWidth="60.0" />
+
+<Button fx:id="btnAddMedicine" layoutX="800.0" layoutY="18.0" onAction="#addMedicine" prefHeight="35.0" prefWidth="90.0" style="-fx-background-color:#2563EB;                -fx-text-fill:white;                -fx-font-weight:bold;" text="ADD" />
+    </AnchorPane>
+
+    <!-- Billing Table -->
+
+    <TableView fx:id="billingTable" editable="true" layoutX="275.0" layoutY="320.0" prefHeight="220.0" prefWidth="900.0">
+
+        <columns>
+
+            <TableColumn fx:id="colMedicineName" prefWidth="220.0" text="Medicine Name" />
+
+            <TableColumn fx:id="colExpiryDate" prefWidth="120.0" text="Expiry Date" />
+
+            <TableColumn fx:id="colBatchNo" prefWidth="120.0" text="Batch No" />
+
+            <TableColumn fx:id="colQty" prefWidth="70.0" text="Qty" />
+
+            <TableColumn fx:id="colPrice" prefWidth="90.0" text="Price" />
+
+            <TableColumn fx:id="colGST" prefWidth="70.0" text="GST" />
+
+            <TableColumn fx:id="colAmount" prefWidth="120.0" text="Amount" />
+
+
+        </columns>
+
+    </TableView>
+
+    <!-- Totals -->
+
+    <AnchorPane layoutX="760.0" layoutY="555.0" prefHeight="90.0" prefWidth="400.0" styleClass="dashboard-card">
+
+        <Label layoutX="30.0" layoutY="15.0" style="-fx-font-size:18px;-fx-font-weight:bold;" text="Sub Total" />
+
+        <Label fx:id="lblSubTotal" layoutX="250.0" layoutY="15.0" style="-fx-font-size:18px;-fx-font-weight:bold;" text="0.00" />
+
+        <Label layoutX="30.0" layoutY="50.0" style="-fx-font-size:18px;-fx-font-weight:bold;" text="GST" />
+
+        <Label fx:id="lblGST" layoutX="250.0" layoutY="50.0" style="-fx-font-size:18px;-fx-font-weight:bold;" text="0.00" />
+
+    </AnchorPane>
+
+    <!-- Grand Total -->
+
+    <Label fx:id="lblGrandTotal" layoutX="800.0" layoutY="648.0" style="-fx-font-size:28px;                   -fx-font-weight:bold;                   -fx-text-fill:#22C55E;" text="Grand Total : ₹0.00" />
+
+    <!-- Buttons -->
+
+    <Button fx:id="btnClear" layoutX="350.0" layoutY="704.0" onAction="#clearBill" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color:#FCA5A5;                    -fx-font-weight:bold;" text="CLEAR" />
+
+    <Button fx:id="btnSaveBill" layoutX="520.0" layoutY="704.0" onAction="#saveBill" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color:#86EFAC;                    -fx-font-weight:bold;" text="SAVE BILL" />
+
+    <Button fx:id="btnPrintBill" layoutX="690.0" layoutY="704.0" onAction="#printBill" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color:#93C5FD;                    -fx-font-weight:bold;" text="PRINT" />
+
+</AnchorPane>
